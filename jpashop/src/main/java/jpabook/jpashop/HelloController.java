@@ -12,4 +12,14 @@ public class HelloController {
         model.addAttribute("data", "hello!");
         return "hello";
     }
+
+    String str = "Hello World!";
+
+    // remove last character(!)
+    // . : matches any character except line breaks
+    // $ : matches the end of the sring, or the end of a line if hte multiline flag (m) is enabled
+    str = str.replaceAll(".$", "");
+    System.out.println(str);
+
+
 }

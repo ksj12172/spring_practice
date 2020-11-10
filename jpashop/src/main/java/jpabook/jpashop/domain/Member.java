@@ -24,7 +24,7 @@ public class Member {
     // 값을 넣어도 foreign key 값이 변경되지 않는다.
     // 1,다 쪽 다 서로가 가진 대상 필드명을 적어주었구나
     // 연관관계의 주인이 이 entity를 뭐라고 이름지었나
-    @OneToMany(mappedBy="member") // order table에 있는 member field
+    @OneToMany(mappedBy="member") // class에 써준 field명?
     // orders 테이블에서 member로 뽑아올 수 있고
     // java code에서는 바로 orders에 접근 가능?
     private List<Order> orders = new ArrayList<>();
